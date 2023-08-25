@@ -1,38 +1,123 @@
-.App {
+*{
+	box-sizing: border-box;
+}
+#root{
+	text-size-adjust: 100%;
+	letter-spacing: normal;
+	background-color:#eff5f7 ;
+	margin: 0 auto;
+	width: 100%;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+ 
+}
+.main_div{
+  background-color:#eff5f7 ;
+  
+}
+.search{
+  background-color: #ffffff;
+  padding: 5px;
+  border-radius: 5px;
+}
+.edit_input{
+  color:  #272a33 !important;
+  font-size: 1rem !important;
+  font-weight: bolder !important;
+  letter-spacing: 0.1rem !important;
+  font-family: 'Signika Negative', sans-serif !important;
+  border: none !important;
+  background: #ffffff!important ;
+  width: 100%;
+}
+.edit_input:focus{
+  border: #95a0ab !important;
+  background: #ffffff !important ;
+  box-shadow: none !important;
+}
+input {
+  background-color: transparent;
+  border: 0px solid;
+  outline: none;
+}
+/* .select_div{
+  background: #ffffff
+
+} */
+.custom-select {
+  border:none !important;
+  width: 280px;
+  height: 50px;
+  border: none;
+  outline: none;
+  padding: 15px !important;
+  border-radius: 5px;
+}
+.card {
+  width: 300px;
+  height: 200px;
+  background-color: #ffffff;
+  border-radius: 10px;
+  box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.2);
+  overflow: hidden;
+  position: relative;
+  border: none !important;
+}
+
+.card-content {
+  padding: 20px;
   text-align: center;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+.card:hover .card-content {
+  animation: slideUp 0.9s forwards;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
-}
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
-}
-
-.App-link {
-  color: #61dafb;
-}
-
-@keyframes App-logo-spin {
+@keyframes slideUp {
   from {
-    transform: rotate(0deg);
+    transform: translateY(100%);
+    opacity: 0;
   }
   to {
-    transform: rotate(360deg);
+    transform: translateY(0);
+    opacity: 1;
   }
 }
+
+.table-container {
+  overflow-x: auto;
+  
+}
+
+.stylish-table {
+  width: 100%;
+  border-collapse: collapse;
+  background-color: #ffffff;
+  box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+}
+
+.stylish-table th,
+.stylish-table td {
+  padding: 12px;
+  text-align: start;
+}
+
+.stylish-table th {
+  background-color: #1E90FF;
+  color: #ffffff;
+}
+
+.stylish-table tr:nth-child(even) {
+  background-color: #f2f2f2;
+}
+
+.stylish-table tr:hover {
+  background-color: #e0e0e0;
+  transition: background-color 0.2s;
+}
+
+
+
+
